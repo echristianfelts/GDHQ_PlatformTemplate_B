@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class Ledge : MonoBehaviour
 {
-    [SerializeField]
     private Vector3 _handPos, _standPos;
     [SerializeField]
-    private GameObject _handPosTarget;
+    private GameObject _handPosTarget, _standPosTarget;
 
     // Start is called before the first frame update
     void Start()
     {
         _handPos = _handPosTarget.transform.position;
+        _standPos = _standPosTarget.transform.position;
     }
 
     // Update is called once per frame
